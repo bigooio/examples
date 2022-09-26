@@ -7,15 +7,14 @@ In order to re-generate the documentation you need to run
 
 `swag init --md .`
 
-
 ## Version: 1.0
 
 ### Terms of service
-http://swagger.io/terms/
+<http://swagger.io/terms/>
 
 **Contact information:**  
 API Support  
-http://www.swagger.io/support  
+<http://www.swagger.io/support>  
 support@swagger.io  
 
 **License:** [Apache 2.0](http://www.apache.org/licenses/LICENSE-2.0.html)
@@ -23,7 +22,7 @@ support@swagger.io
 ### /admin/user/
 
 #### GET
-##### Summary:
+##### Summary
 
 List users from the store
 
@@ -31,10 +30,10 @@ List users from the store
 
 | Code | Description | Schema |
 | ---- | ----------- | ------ |
-| 200 | ok | [ [ [api.User](#api.User) ] ] |
+| 200 | ok | [ [ [api.User](#apiuser) ] ] |
 
 #### POST
-##### Summary:
+##### Summary
 
 Add a new user to the store
 
@@ -42,18 +41,18 @@ Add a new user to the store
 
 | Name | Located in | Description | Required | Schema |
 | ---- | ---------- | ----------- | -------- | ---- |
-| message | body | User Data | Yes | [api.User](#api.User) |
+| message | body | User Data | Yes | [api.User](#apiuser) |
 
 ##### Responses
 
 | Code | Description | Schema |
 | ---- | ----------- | ------ |
 | 200 | ok | string |
-| 400 | We need ID!! | [api.APIError](#api.APIError) |
-| 404 | Can not find ID | [api.APIError](#api.APIError) |
+| 400 | We need ID!! | [api.APIError](#apiapierror) |
+| 404 | Can not find ID | [api.APIError](#apiapierror) |
 
 #### PUT
-##### Summary:
+##### Summary
 
 Add a new user to the store
 
@@ -61,20 +60,20 @@ Add a new user to the store
 
 | Name | Located in | Description | Required | Schema |
 | ---- | ---------- | ----------- | -------- | ---- |
-| message | body | User Data | Yes | [api.User](#api.User) |
+| message | body | User Data | Yes | [api.User](#apiuser) |
 
 ##### Responses
 
 | Code | Description | Schema |
 | ---- | ----------- | ------ |
 | 200 | ok | string |
-| 400 | We need ID!! | [api.APIError](#api.APIError) |
-| 404 | Can not find ID | [api.APIError](#api.APIError) |
+| 400 | We need ID!! | [api.APIError](#apiapierror) |
+| 404 | Can not find ID | [api.APIError](#apiapierror) |
 
 ### /admin/user/{id}
 
 #### GET
-##### Summary:
+##### Summary
 
 Read user from the store
 
@@ -88,12 +87,11 @@ Read user from the store
 
 | Code | Description | Schema |
 | ---- | ----------- | ------ |
-| 200 | OK | [api.User](#api.User) |
-| 400 | We need ID!! | [api.APIError](#api.APIError) |
-| 404 | Can not find ID | [api.APIError](#api.APIError) |
+| 200 | OK | [api.User](#apiuser) |
+| 400 | We need ID!! | [api.APIError](#apiapierror) |
+| 404 | Can not find ID | [api.APIError](#apiapierror) |
 
 ### Models
-
 
 #### api.APIError
 
